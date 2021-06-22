@@ -4,7 +4,10 @@
 				<h2>Welcome</h2>
 				
 				<p>
-					Put link to original dataset here
+					This database includes data from a dataset which
+					can be found 
+					<a href="https://www.kaggle.com/nikdavis/steam-store-games">
+					here.</a>
 				</p>
 			</div> <!-- / main -->
 
