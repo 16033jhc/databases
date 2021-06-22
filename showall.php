@@ -32,8 +32,19 @@
                         ?>
                 <!-- Results go here -->
                 <div class="results">
-                    You have mail!
-                </div>
+                    <span class="sub_heading">
+                        <a href="https://store.steampowered.com/app/<?php echo $find_rs['appid']; ?>/"> 
+                            <?php echo $find_rs['name']; ?>
+                        </a>
+                    </span>
+
+                    <br />
+                    <?php echo $find_rs['genreID']; ?>
+                    <?php echo $find_rs['genre']; ?>
+
+                </div> <!-- results -->
+
+                <br />
 
                 <?php
                     
