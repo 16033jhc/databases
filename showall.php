@@ -3,7 +3,7 @@
     $find_sql = "SELECT * FROM `gamedata`
     JOIN genres ON (gamedata.GenreID = genres.GenreID) 
     JOIN devs ON (gamedata.DevID = devs.DevID)
-
+    LIMIT 1000
     ";
     $find_query = mysqli_query($dbconnect, $find_sql);
     $find_rs = mysqli_fetch_assoc($find_query);
