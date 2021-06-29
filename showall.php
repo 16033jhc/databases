@@ -43,8 +43,8 @@
                     </span>
                     
                     <p>
-                        <b>Genre</b>:
-                        <?php echo $find_rs['genres']; ?>
+                        <b>Tags</b>:
+                        <?php echo $find_rs['steamspy_tags']; ?>
 
                         <br />
 
