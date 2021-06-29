@@ -3,30 +3,11 @@
     $find_sql = "SELECT * FROM `gamedata`
     JOIN genres ON (gamedata.GenreID = genres.GenreID) 
     JOIN devs ON (gamedata.DevID = devs.DevID)
-    LIMIT 50
+
     ";
     $find_query = mysqli_query($dbconnect, $find_sql);
     $find_rs = mysqli_fetch_assoc($find_query);
     $count = mysqli_num_rows($find_query);
-?>
-
-<?php function format_percentage($percentage, $precision = 2) {
-    return round($percentage, $precision) . '%';
-}
-
-function calculate_percentage($number, $total) {
-
-    // Can't divide by zero so let's catch that early.
-    if ($total == 0) {
-        return 0;
-    }
-
-    return ($number / $total) * 100;
-}
-
-function percent($number, $total) {
-    return format_percentage(calculate_percentage($number, $total));
-}
 ?>
 
 			<div class="box main">
