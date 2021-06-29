@@ -73,7 +73,7 @@ function percent($number, $total) {
                         <br />
 
                         <b>Rating</b>:
-                        <?php percent($value['positive_reviews'], (['positive_reviews'] + ['negative_reviews'])) ?>
+                        <?php echo(round(($find_rs['positive_ratings'] / ($find_rs['positive_ratings'] + $find_rs['negative_ratings'])) * 100)); ?>
                     </p>
 
                 </div> <!-- results -->
