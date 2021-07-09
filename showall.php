@@ -3,6 +3,7 @@
     $find_sql = "SELECT * FROM `gamedata`
     JOIN genres ON (gamedata.GenreID = genres.GenreID) 
     JOIN devs ON (gamedata.DevID = devs.DevID)
+    JOIN descriptions ON (gamedata.appid = descriptions.appID)
     LIMIT 1000
     ";
     $find_query = mysqli_query($dbconnect, $find_sql);
@@ -55,6 +56,12 @@
 
                         <b>Rating</b>:
                         <?php echo(round(($find_rs['positive_ratings'] / ($find_rs['positive_ratings'] + $find_rs['negative_ratings'])) * 100).'%'); ?>
+                        
+                        <br />
+                        <br />
+
+                        <b>Description</b>:
+                        <?php echo $find_rs['short_description']; ?>
                     </p>
 
                 </div> <!-- results -->
