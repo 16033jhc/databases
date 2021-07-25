@@ -38,7 +38,7 @@
                 <!-- Results go here -->
                 <div class="results">
                     <span class="sub_heading">
-                        <a href="https://store.steampowered.com/app/<?php echo $find_rs['appid']; ?>/"> 
+                        <a href="info.php"> 
                             <?php echo $find_rs['name']; ?>
                         </a>
                     </span>
