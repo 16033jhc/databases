@@ -48,20 +48,25 @@
                         <?php echo $find_rs['steamspy_tags']; ?>
 
                         <br />
+						
+						<b>Price</b>:
+                        <?php echo '$', $find_rs['price']; ?>
 
-                        <b>Developer</b>:
+                        <br />
+                        
+						<b>Developer</b>:
                         <?php  echo $find_rs['developer']; ?>
 
                         <br />
 
                         <b>Rating</b>:
-                        <?php echo(round(($find_rs['positive_ratings'] / ($find_rs['positive_ratings'] + $find_rs['negative_ratings'])) * 100).'%'); ?>
+                        <?php echo(round(($find_rs['positive_ratings'] / ($find_rs['positive_ratings'] + $find_rs['negative_ratings'])) * 100).'% Positive'); ?>
                         
                         <br />
                         <br />
 
                         <b>Description</b>:
-                        <?php echo $find_rs['about_the_game']; ?>
+                        <?php echo $find_rs['detailed_description']; ?>
                     </p>
 
                 </div> <!-- results -->
