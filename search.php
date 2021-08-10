@@ -6,7 +6,7 @@
     JOIN genres ON (gamedata.GenreID = genres.GenreID) 
     JOIN devs ON (gamedata.DevID = devs.DevID)
     JOIN descriptions ON (gamedata.appid = descriptions.appID)
-    WHERE `name` LIKE '%$name_dev%' OR `developer` LIKE '%$name_dev%'
+    WHERE `name` LIKE '%$name_dev%' OR 'developer' LIKE '%$name_dev%'
     LIMIT 1000
     ";
     $find_query = mysqli_query($dbconnect, $find_sql);
