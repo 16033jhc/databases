@@ -2,11 +2,8 @@
 
     $name_dev = $_POST['dev_name'];
 
-    $find_sql = "SELECT * FROM `gamedata`
-    JOIN genres ON (gamedata.GenreID = genres.GenreID) 
-    JOIN devs ON (gamedata.DevID = devs.DevID)
-    JOIN descriptions ON (gamedata.appid = descriptions.appID)
-    WHERE `name` LIKE '%$name_dev%' OR 'developer' LIKE '%$name_dev%'
+    $find_sql = "SELECT * FROM `details`
+    JOIN types ON (details.typeID = types.typeID) 
     LIMIT 1000
     ";
     $find_query = mysqli_query($dbconnect, $find_sql);

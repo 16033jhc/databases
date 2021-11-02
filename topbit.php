@@ -19,12 +19,12 @@
 		<meta charset="utf-8">
 		
 		<!-- For assessment you need to change these -->
-		<meta name="description" content="games, steam, ">
-		<meta name="keywords" content="Steam Database">
-		<meta name="keywords" content="games, steam, ratings">
+		<meta name="description" content="games, pokemon">
+		<meta name="keywords" content="Pokemon Database">
+		<meta name="keywords" content="games, pokemon. database">
 		
-		<title>Game Database</title>
 		
+		<title>Pokémon Database</title>
 		<!-- for multiple fonts change | to %7c * no spaces* -->
 		<link href="http://fonts.googleapis.com/css?family=Lato%7cUbuntu"
 		rel="stylesheet">
@@ -48,5 +48,5 @@
 			</div>
 			
 			<div class="box banner">
-				<h1>Steam Database</h1>
+				<h1>Pokémon Database</h1>
 			</div> <!-- / banner -->

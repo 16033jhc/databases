@@ -95,14 +95,17 @@ body {
 
 /*** Headings ***/
 
-h1, h2, h3, h4 {
+.heading {
     font-family: 'Ubuntu', sans-serif;
+    font-weight: bold;
+    font-size: 200%
 }
 
 .sub_heading {
     font-family: 'Ubuntu', sans-serif;
-    color: #593849;
+    /*color: #593849; */
     font-weight: bold;
+    font-size: 150%
 }
 
 /***** Links *****/
@@ -167,8 +170,9 @@ a.side:hover {color:#8a1737; }
     border: 1px solid #636263;
     border-radius: 0 5px 5px 0;
 }
+/* Search needs to be reimplemented first
 
-input [type "submit"]:hover {
+/* input [type "submit"]:hover {
     background-color: #000;
 }
 

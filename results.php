@@ -21,36 +21,50 @@
                         ?>
                 <!-- Results go here -->
                 <div class="results">
-                    <span class="sub_heading">
-                        <a href="https://store.steampowered.com/app/<?php echo $find_rs['appid']; ?>/"> 
-                            <?php echo $find_rs['name']; ?>
-                        </a>
+                    <span class="heading">
+                        <?php echo $find_rs['Name']; ?>
                     </span>
                     
+                    <span class="sub_heading">    
+                        <p>
+                            <b>Type(s)</b>:
+                            <?php echo $find_rs['types']; ?>
+                        </p>
+                    </span>
+
                     <p>
-                        <b>Tags</b>:
-                        <?php echo $find_rs['steamspy_tags']; ?>
+                        <b>Generation</b>:
+                        <?php echo $find_rs['Generation']; ?>
+                    </p>
 
-                        <br />
-						
-						<b>Price</b>:
-                        <?php echo '$', $find_rs['price']; ?>
+                    <p>
+                        <b>Health Points</b>:
+                        <?php echo $find_rs['HP']; ?>
+                    </p>
 
-                        <br />
-                        
-						<b>Developer</b>:
-                        <?php  echo $find_rs['developer']; ?>
+                    <p>
+                        <b>Attack Points</b>:
+                        <?php echo $find_rs['Attack']; ?>
+                    </p>
 
-                        <br />
+                    <p>
+                        <b>Defence Points</b>:
+                        <?php echo $find_rs['Defense']; ?>
+                    </p>
 
-                        <b>Rating</b>:
-                        <?php echo(round(($find_rs['positive_ratings'] / ($find_rs['positive_ratings'] + $find_rs['negative_ratings'])) * 100).'% Positive'); ?>
-                        
-                        <br />
-                        <br />
+                    <p>
+                        <b>Speed Points</b>:
+                        <?php echo $find_rs['Speed']; ?>
+                    </p>
 
-                        <b>Description</b>:
-                        <?php echo $find_rs['detailed_description']; ?>
+                    <p>
+                        <b>Special Attack Points</b>:
+                        <?php echo $find_rs['Sp. Atk']; ?>
+                    </p>
+
+                    <p>
+                        <b>Special Defence Points</b>:
+                        <?php echo $find_rs['Sp. Def']; ?>
                     </p>
 
                 </div> <!-- results -->

@@ -1,10 +1,7 @@
 <?php include("topbit.php");
 
-    $find_sql = "SELECT * FROM `gamedata`
-    JOIN genres ON (gamedata.GenreID = genres.GenreID) 
-    JOIN devs ON (gamedata.DevID = devs.DevID)
-    JOIN descriptions ON (gamedata.appid = descriptions.appID)
-    LIMIT 1000
+    $find_sql = "SELECT * FROM `details`
+    JOIN types ON (details.typeID = types.typeID)
     ";
     $find_query = mysqli_query($dbconnect, $find_sql);
     $find_rs = mysqli_fetch_assoc($find_query);
@@ -18,4 +15,4 @@
 			
             </div> <!-- / main -->
 
-<?php include("bottombit.php") ?>
+<?php include("bottombit.php") ?> 
