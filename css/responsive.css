@@ -10,3 +10,9 @@
   width: 40px;
 }
 }
+
+@media(max-width:640px){
+  header h1{
+    font-size: 150%;
+  }
+}
