@@ -1,9 +1,10 @@
 <?php include("topbit.php");
 
-    $name_dev = $_POST['dev_name'];
+    $name_type = mysqli_real_escape_string($dbconnect, $_POST['typeID']);
 
     $find_sql = "SELECT * FROM `details`
-    JOIN types ON (details.typeID = types.typeID) 
+    JOIN types ON (details.typeID = types.typeID)
+    WHERE 'Name' LIKE '%$name_type%' OR 'types' LIKE '%$name_type%' 
     LIMIT 1000
     ";
     $find_query = mysqli_query($dbconnect, $find_sql);
