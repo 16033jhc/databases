@@ -39,7 +39,7 @@
 
 <?php
 
-    require_once 'config.php';
+    require 'config.php';
 
     $name = $_REQUEST['nameText']
     $types = $_REQUEST['typeText']
@@ -51,8 +51,8 @@
     $speed = $_REQUEST['speedNumber']
     $generation = $_REQUEST['generationNumber']
 
-    $sql = "INSERT INTO details (Name, HP, Attack, Defense, Sp. Atk, Sp. Def, Speed, Generation)
-            VALUES ('$name', '$health', '$defense', '$sp_attack', '$sp_defense', '$speed', '$generation')"; 
+    $sql = "INSERT INTO details (Name, types, HP, Attack, Defense, Sp. Atk, Sp. Def, Speed, Generation)
+            VALUES ('$name', '$types', '$health', '$defense', '$sp_attack', '$sp_defense', '$speed', '$generation')"; 
 
     
     // Checks record was added
@@ -62,3 +62,5 @@
     } else{ 
         echo "Error: " . $sql . "<br>" . $dbconnect->error;
     }
+
+?>
