@@ -65,6 +65,12 @@
                             
                             <label for="generationNumber">Generation:</label>
                             <input name="generationNumber" id="generationNumber" type="number"></input>
+                    
+                            </br>
+                            
+                            <label for="legendaryBoolean">Legendary Status:</label>
+                            <input name="legendaryBoolean" id="legendaryBoolean" type="checkbox"></input>
+                    
                     </fieldset>
 
                     <fieldset>
