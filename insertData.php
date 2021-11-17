@@ -5,13 +5,13 @@
 
     $name = $_REQUEST['nameText'];
     $types = $_REQUEST['typeText'];
-    $totalPoints = $health + $attack + $defense + $sp_attack +$sp_defense + $speed;
     $health = $_REQUEST['healthNumber'];
     $attack = $_REQUEST['attackNumber'];
     $defense = $_REQUEST['defenseNumber'];
     $sp_attack = $_REQUEST['Sp_attackNumber'];
     $sp_defense = $_REQUEST['Sp_defenseNumber'];
     $speed = $_REQUEST['speedNumber'];
+    $totalPoints = $health + $attack + $defense + $sp_attack +$sp_defense + $speed;
     $generation = $_REQUEST['generationNumber'];
     $legendary = $_REQUEST['legendaryBoolean'];
 
