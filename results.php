@@ -59,12 +59,12 @@
 
                     <p>
                         <b>Special Attack Points</b>:
-                        <?php echo $find_rs['Sp. Atk']; ?>
+                        <?php echo $find_rs['Sp_Atk']; ?>
                     </p>
 
                     <p>
                         <b>Special Defence Points</b>:
-                        <?php echo $find_rs['Sp. Def']; ?>
+                        <?php echo $find_rs['Sp_Def']; ?>
                     </p>
 
                 </div> <!-- results -->

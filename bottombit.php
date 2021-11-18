@@ -6,8 +6,8 @@
             <form class="searchform" method="post"
             action="search.php" enctype="multipart/form-data">
 
-                <input class="search" type="text" name="typeID"
-                size="40" value="" required placeholder="App Name / Dev Name"/>
+                <input class="search" type="text" name="search_bnt"
+                size="40" value="" required placeholder="Pokemon Name"/>
 
                 <input class="submit" type="submit"
                 name="find_game_name" value="&#xf002;" />
@@ -26,7 +26,7 @@
                             <label for="nameText">Name:</label></br>
                             <input name="nameText" id="nameText" type="text"></input>
                             
-                            </br>
+                            </br></br>
 
                             <label for="typeText">Type(s):</label></br>
                             <input name="typeText" id="typeText" type="text"></input>
