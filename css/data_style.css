@@ -44,7 +44,11 @@ body {
 
 
 /* make logo and banner the same colour */
-.logo, .main {
+.logo {
+    background-color: #ffffff; /* white */
+}
+
+.main {
     background-color: #dfcfbc;  /* beige */
 }
 
